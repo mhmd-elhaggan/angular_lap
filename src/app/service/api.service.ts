@@ -10,8 +10,7 @@ export class ApiService {
 
   getProduct(){
     return this.http.get<any>("../assets/products.json")
-    .pipe(map((res:any)=>{
-      return res;
+    
     }))
   }
 }
