@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotfoundpageComponent } from './notfoundpage/notfoundpage.component';
 import { ItemDetalisComponent } from './item-detalis/item-detalis.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ItemDetalisComponent } from './item-detalis/item-detalis.component';
     RegisterComponent,
     NotfoundpageComponent,
     ItemDetalisComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
