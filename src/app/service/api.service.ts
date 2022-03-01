@@ -10,6 +10,10 @@ export class ApiService {
 
   getProduct(){
     return this.http.get<any>("../assets/products.json")
+
    // return this.http.get<any>("https://fakestoreapi.com/products") 
+    
+   // }))
+
   }
 }
