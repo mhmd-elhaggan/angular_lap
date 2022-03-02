@@ -7,7 +7,7 @@ import { CartserviceService } from 'src/app/service/cartservice.service';
 })
 export class CartComponent implements OnInit {
   public products : any = [];
-  public Total !: number;
+  public Total !: number ;
   constructor(private cartService : CartserviceService) { }
 
   ngOnInit(): void {
@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
     .subscribe(res=>{
       this.products = res;
       this.Total = this.cartService.getTotalPrice();
+      console.log(this.Total)
     })
   }
    removeItem(item: any){

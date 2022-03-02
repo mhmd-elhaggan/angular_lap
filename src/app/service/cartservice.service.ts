@@ -24,7 +24,7 @@ export class CartserviceService {
   getTotalPrice() : number{
     let gTotal = 0;
     this.cartItemList.map((a:any)=>{
-      gTotal += a.total;
+      gTotal += a.price;
     })
     return gTotal;
   }
@@ -36,4 +36,5 @@ export class CartserviceService {
     })
     this.productList.next(this.cartItemList);
   }
+  
 }

@@ -16,4 +16,10 @@ export class ApiService {
    // }))
 
   }
+  getProductDetails(productId: any) {
+
+    //return this.http.get<any>(`../assets/products.json/${productId}`);
+     return this.http.get(`https://fakestoreapi.com/products/${productId}`);
+  }
+
 }
